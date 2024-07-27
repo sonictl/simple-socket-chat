@@ -32,7 +32,7 @@ io.on('connection', function (socket) {
     socket.on('disconnect', function () {
         if (addedUser) {
             --numUsers;
-            io.emit('is online', '&#x1F4A1 <b>' + socket.username + ' 离开.. </b>' + '<span style="color:DarkGray">当前在线: ' + numUsers + '人</span>');
+            io.emit('is online', '&#x1F319 <b>' + socket.username + ' 离开.. </b>' + '<span style="color:DarkGray">当前在线: ' + numUsers + '人</span>');
         }
     });
 
