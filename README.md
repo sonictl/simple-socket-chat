@@ -7,6 +7,6 @@ a simple chat web app that depends on nodejs and socket.io
 git clone https://github.com/sonictl/simple-socket-chat
 cd simple-socket-chat
 npm install
-node index.app
+node index.js
 ```
 
