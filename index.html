@@ -29,11 +29,12 @@
     <![endif]-->
 
     <style>
+
       form input {
         border-style: solid;
         border-color: black;
         padding: 10px;
-        width: 80%;
+        width: 74%;
         margin-right: 0.5%;
       }
 
@@ -42,6 +43,14 @@
           background: rgb(130, 224, 255);
           padding: 10px;
       }
+
+      #tool_webs{
+        position: absolute;
+        bottom: 55px;
+        width: 100%;
+        background-color: #e8e8e8;
+      }
+
 
       #messages {
         list-style-type: none;
@@ -62,10 +71,11 @@
         margin-bottom: 100px;
       }
       #clear {
-        background-color: rgb(0, 154, 205); /* 绿色背景 */
+        width: 5%;
+        background-color: rgb(74, 78, 79); 
         border: none; /* 去掉边框 */
         color: white; /* 白色文字 */
-        padding: 5px 15px; /* 上下左右内边距 */
+        padding: 5px 5px; /* 上下左右内边距 */
         text-align: center; /* 文字居中 */
         text-decoration: none; /* 去掉下划线 */
         display: inline-block; /* 内联块元素 */
@@ -78,29 +88,23 @@
       }
 
       #clear:hover {
-        background-color: #00d5ff; /* 悬停时的背景色 */
+        background-color: #7d7e7e; /* 悬停时的背景色 */
       }
     </style>
+    
   </head>
   <body>
     <div class="container">
       <div class="page-header">
-        <h1>畅聊</h1>
-        <button id="clear">清除身份</button>
+        <h1 class="h1">畅聊</h1>
+        <button id="clear">X</button>
       </div>
       <p class="lead">简单，沟通。</p>
       <p>收到的信息:</p>
       <ul id="messages"></ul>
     </div>
 
-    <div
-      style="
-        position: absolute;
-        bottom: 55px;
-        width: 100%;
-        background-color: #f5f5f5;
-      "
-    >
+    <div id="tool_webs">
       <div class="container">
         <p>
           Webs for image sharing: <br />
@@ -113,15 +117,8 @@
           <a href="https://wormhole.app/" target="_blank">wormhole</a> ,
           <a href="https://www.files2u.com" target="_blank">files2u</a> ,
           <a href="https://www.filedroper.com" target="_blank">filedroper</a> ,
-          <a href="https://www.plustransfer.com/" target="_blank"
-            >plusTransfer</a
-          >
-          ,
-          <a
-            href="https://www.lifehack.org/articles/technology/20-online-file-sharing-tools-you-should-using.html"
-            target="_blank"
-            >more</a
-          >
+          <a href="https://www.plustransfer.com/" target="_blank">plusTransfer</a> ,
+          <a href="https://www.lifehack.org/articles/technology/20-online-file-sharing-tools-you-should-using.html" target="_blank">more</a>
         </p>
       </div>
     </div>
